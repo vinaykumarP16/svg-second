@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+
+body{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #E5E5E5;
+}
+
+svg{
+	width: 800px;
+	height: 700px;
+}
+
+#girl{
+	transition: transform 1s linear;
+	transform-origin: top left;
+	animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    50% { transform: translateX(-60px); }
+    100% { transform: translateX(60px); }
+  }
+
+#main{
+	animation: example 4s infinite 2s;
+}
+
+
+@keyframes example {
+  from {transform:rotate(360deg)}
+  to {background-color: yellow;}
+}
+
+#Slice1{
+	animation: vin 4s infinite;
+}
+
+
+@keyframes vin{
+  from {transform:rotate(-360deg)}
+  to {transform:rotate(360deg)}
+}
+
+#sub7{
+	animation: subsev 5s infinite;
+}
+
+@keyframes subsev{
+  from {transform:translateX(150px)}
+  to {transform:translateX(-110px)}
+}
+
+#sub8{
+	animation: subsix 5s infinite;
+}
+
+@keyframes subsix{
+  from {transform:translateY(-25px)}
+  to {transform:translateY(25px)}
+}
+
+#sub5{
+	animation: subf 5s infinite;
+}
+
+@keyframes subf{
+  from {transform:translateY(40px)}
+  to {transform:translateY(-40px);}
+}
+
+#sub1{
+	animation: subone 5s infinite;
+}
+
+@keyframes subone{
+  from {transform:translateY(20px)}
+  to {transform:translateY(-20px);}
+}
+
+#com3{
+	animation: comt 5s infinite;
+}
+
+@keyframes comt{
+  from {transform:translateX(6px)}
+  to {transform:translateX(-6px);}
+}
+
+#ball{
+	animation: ball 5s infinite;
+}
+
+@keyframes ball{
+  from {transform:translateX(-50px)}
+  to {transform:translateX(50px);}
+}
+
+#cup{
+	animation: fact 5s infinite;
+}
+
+
+@keyframes fact{
+  from {transform:translateX(-12px)}
+  to {transform:translateX(12px);}	
+}
+
+	@media screen and (max-width: 800px) {
+			
+					
+					body{
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-content: center;
+					}
+
+
+			}
